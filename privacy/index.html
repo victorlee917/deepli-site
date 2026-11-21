@@ -58,11 +58,12 @@
 <li><strong>Not sent:</strong> your name or contact details, Apple ID, the albums or tracks you add or listen to, your notes, or the advertising identifier (IDFA).</li>
 <li>This data is not linked to your identity, not used for ads and not used to track you across other companies’ apps or websites. It is kept for up to 14 months for statistics and 90 days for crash reports. Google processes it under the <a href="https://firebase.google.com/support/privacy">Firebase privacy terms</a>.</li>
 </ul>
-<h2>5. Artist introductions (Wikipedia)</h2>
+<h2>5. Artist introductions and album details (Wikipedia, Discogs)</h2>
 <p>When you open an artist page, the app fetches that artist’s introduction from Wikipedia, which is run by the Wikimedia Foundation. Only the artist’s name is sent, together with the app’s name and version so Wikimedia can recognise the app. Nothing else about you or your listening records is sent. Wikimedia handles the request, including your IP address, under the <a href="https://foundation.wikimedia.org/wiki/Policy:Privacy_policy">Wikimedia Foundation Privacy Policy</a>. The introduction text comes from Wikipedia under the CC BY-SA license, and the page links to the source article.</p>
+<p>When you open an album’s About tab, the app looks the album up on Discogs, a music database run by Discogs (Zink Media, LLC), to show its community rating and a link to LP listings. When you open your collection, it also looks up the albums you have finished, a few at a time, to read their Discogs genres and styles for the Taste screen; these are saved with your collection (and synced through iCloud if sync is on). The album’s barcode (UPC), title and artist name are sent to the developer’s server (Supabase), which asks Discogs on the app’s behalf and keeps the result for a few days so the same album is not looked up again. Nothing about you or your listening records is sent, and the server does not keep your IP address beyond short-lived service logs. If Wikipedia has no article on an artist in your app language, the artist page uses that artist’s Discogs introduction instead, found the same way through the album you came from; the English text is translated on your device with Apple’s Translation framework, and the text you read is not sent anywhere. Opening the LP link takes you to the Discogs website, where the <a href="https://www.discogs.com/about/privacy">Discogs Privacy Policy</a> applies.</p>
 
 <h2>6. No selling, tracking or ads</h2>
-<p>The app does not sell your data, show ads or track you. Apart from Firebase in section 4 and the artist name sent to Wikipedia in section 5, it does not pass data to any other company.</p>
+<p>The app does not sell your data, show ads or track you. Apart from Firebase in section 4 and the artist and album names sent to Wikipedia and Discogs in section 5, it does not pass data to any other company.</p>
 
 <h2>7. Retention and deletion</h2>
 <p>Listening data stays on your device and in your iCloud until you delete it; the developer keeps no copy. The usage statistics and crash reports in section 4 are deleted after the periods stated there.</p>
@@ -129,11 +130,12 @@
 <li><strong>보내지 않는 것:</strong> 이름·연락처, Apple ID, 담거나 들은 앨범과 곡, 노트, 광고 식별자(IDFA).</li>
 <li>이 정보는 사용자의 신원과 연결하지 않으며, 광고나 추적(다른 회사의 앱·웹사이트와 정보를 연결하는 것)에 쓰지 않습니다. 통계는 최대 14개월, 오류 보고는 90일 동안 보관됩니다. Google은 <a href="https://firebase.google.com/support/privacy">Firebase 개인정보 보호 약관</a>에 따라 처리합니다.</li>
 </ul>
-<h2>5. 아티스트 소개(위키백과)</h2>
+<h2>5. 아티스트 소개와 앨범 정보(위키백과, Discogs)</h2>
 <p>아티스트 화면을 열면 그 아티스트의 소개를 Wikimedia 재단이 운영하는 위키백과에서 받아 옵니다. 이때 아티스트 이름만 보내며, Wikimedia가 앱을 알아볼 수 있도록 앱 이름과 버전이 함께 전달됩니다. 사용자나 감상 기록에 관한 다른 정보는 보내지 않습니다. 이 요청은 IP 주소를 포함해 <a href="https://foundation.wikimedia.org/wiki/Policy:Privacy_policy">Wikimedia 재단 개인정보 처리방침</a>에 따라 처리됩니다. 소개 글은 CC BY-SA 라이선스에 따라 위키백과에서 가져오며, 화면에 원문 링크를 함께 표시합니다.</p>
+<p>앨범의 소개 탭을 열면, Discogs(Zink Media, LLC)가 운영하는 음반 데이터베이스에서 그 앨범의 평점과 LP 매물 링크를 찾습니다. 컬렉션을 열 때도 다 들은 앨범을 몇 장씩 찾아, 취향 화면에 쓸 Discogs 장르·스타일을 받아 컬렉션에 함께 저장합니다(동기화를 켜 두었다면 iCloud로 함께 동기화됩니다). 이때 앨범의 바코드(UPC), 제목, 아티스트 이름이 개발자의 서버(Supabase)로 가고, 서버가 앱을 대신해 Discogs에 물은 뒤 같은 앨범을 다시 묻지 않도록 결과를 며칠 보관합니다. 사용자나 감상 기록에 관한 정보는 보내지 않으며, 서버는 짧게 남는 서비스 기록 말고는 IP 주소를 보관하지 않습니다. 아티스트 화면에서 앱 언어의 위키백과 문서가 없으면, 같은 방법으로(연 앨범을 통해) 찾은 그 아티스트의 Discogs 소개를 대신 보여 줍니다. 영어 원문은 Apple의 번역 기능으로 기기 안에서 옮기며, 그 글을 다른 곳으로 보내지 않습니다. LP 링크를 누르면 Discogs 웹사이트로 이동하며, 그곳에서는 <a href="https://www.discogs.com/about/privacy">Discogs 개인정보 처리방침</a>이 적용됩니다.</p>
 
 <h2>6. 판매·추적·광고 없음</h2>
-<p>앱은 사용자 정보를 팔지 않고, 광고를 보여 주거나 추적하지 않습니다. 4절의 Firebase와 5절의 위키백과(아티스트 이름) 말고는 다른 회사에 정보를 넘기지 않습니다.</p>
+<p>앱은 사용자 정보를 팔지 않고, 광고를 보여 주거나 추적하지 않습니다. 4절의 Firebase와 5절의 위키백과·Discogs(아티스트·앨범 이름) 말고는 다른 회사에 정보를 넘기지 않습니다.</p>
 
 <h2>7. 보관과 삭제</h2>
 <p>감상 정보는 사용자가 지울 때까지 기기와 사용자 iCloud에 남으며, 개발자가 따로 보관하는 사본은 없습니다. 4절의 사용 통계·오류 보고는 정해진 기간이 지나면 지워집니다.</p>
